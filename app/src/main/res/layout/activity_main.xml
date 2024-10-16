@@ -11,11 +11,12 @@
         android:id="@+id/constraintLayout"
         android:layout_width="304dp"
         android:layout_height="423dp"
-        android:layout_marginTop="96dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.429"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.285">
 
         <TextView
             android:id="@+id/textView3"
@@ -34,13 +35,14 @@
             android:id="@+id/txtPassword"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
             android:ems="10"
             android:hint="@string/PlaceholderConstraseña"
             android:inputType="textPassword"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.505"
+            app:layout_constraintHorizontal_bias="0.51"
             app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="141dp" />
+            app:layout_constraintTop_toBottomOf="@+id/textview_EsSalud" />
 
         <Button
             android:id="@+id/btnIngresar"
@@ -59,19 +61,23 @@
             android:layout_height="45dp"
             android:layout_marginTop="16dp"
             android:text="@string/btnCrearCuenta"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.51"
+            app:layout_constraintHorizontal_bias="0.516"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textViewCrearCuenta" />
+            app:layout_constraintTop_toBottomOf="@+id/textViewCrearCuenta"
+            app:layout_constraintVertical_bias="0.133" />
 
         <TextView
             android:id="@+id/textViewOlvidarContraseña"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
             android:text="@string/textViewOlvidarContraseña"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.538"
             app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="267dp" />
+            app:layout_constraintTop_toBottomOf="@+id/btnIngresar" />
 
         <TextView
             android:id="@+id/textViewCrearCuenta"
@@ -80,16 +86,17 @@
             android:layout_marginTop="12dp"
             android:text="@string/textViewCrearCuenta"
             app:layout_constraintTop_toBottomOf="@+id/textViewOlvidarContraseña"
-            tools:layout_editor_absoluteX="72dp" />
+            tools:layout_editor_absoluteX="77dp" />
 
         <TextView
             android:id="@+id/textview_EsSalud"
             android:layout_width="210dp"
             android:layout_height="42dp"
+            android:layout_marginTop="28dp"
             android:hint="@string/textview_EsSaludhint"
             android:textSize="18dp"
-            tools:layout_editor_absoluteX="50dp"
-            tools:layout_editor_absoluteY="84dp" />
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            tools:layout_editor_absoluteX="47dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -98,24 +105,26 @@
         android:layout_width="354dp"
         android:layout_height="66dp"
         android:layout_marginTop="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        app:layout_constraintVertical_bias="0.061">
 
         <TextView
             android:id="@+id/TextViewConsulta"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
             android:text="@string/textViewConsulta"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.397"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
         android:layout_width="350dp"
         android:layout_height="78dp"
         android:layout_marginTop="16dp"
@@ -124,26 +133,29 @@
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout2"
-        app:layout_constraintVertical_bias="0.131">
+        app:layout_constraintVertical_bias="0.0">
 
         <TextView
             android:id="@+id/textViewProvincias"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/textViewProvincias"
-            tools:layout_editor_absoluteX="30dp"
-            tools:layout_editor_absoluteY="16dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="180dp"
-        android:layout_height="88dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="166dp"
+        android:layout_height="58dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.044"
         app:srcCompat="@drawable/essalud" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
